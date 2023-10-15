@@ -3,6 +3,48 @@ using namespace std;
 #include <limits.h>
 #include <bits/stdc++.h>
 
+int distanciaMinima(int distancia[], bool mancha[])
+{
+    int distanciaVertice = INT_MAX, vertice;
+ 
+    for (int v = 0; v < 501; v++)
+        if (mancha[v] == false && distancia[v] <= distanciaVertice)
+            distanciaVertice = distancia[v], vertice = v;
+ 
+    return vertice;
+}
+
+void dijkstra(int grafo[501][501], int verticeOrigem, int verticeDestino)
+{
+    int distancia[501];
+    bool mancha[501];
+
+    for (int i = 0; i < 501; i++)
+        distancia[i] = INT_MAX, mancha[i] = false;
+
+    distancia[verticeOrigem] = 0;
+ 
+    for (int count = 0; count < 501 - 1; count++) {
+        int u = distanciaMinima(distancia, mancha);
+
+        mancha[u] = true;
+
+        for (int v = 0; v < 501; v++)
+
+            if (!mancha[v] && !(grafo[u][v] == -1) && distancia[u] != INT_MAX && distancia[u] + grafo[u][v] < distancia[v]) {
+                  distancia[v] = distancia[u] + grafo[u][v];
+                }
+    }
+
+    if(distancia[verticeDestino] >= INT_MAX) {
+      cout << "Nao e possivel entregar a carta\n";
+    }
+
+    else {
+      cout << distancia[verticeDestino] << "\n";
+    }
+};
+
 class Grafo {
   public:
     int grafo[501][501] = {};
@@ -22,7 +64,6 @@ class Grafo {
 
 int main(){
   int vertices, arestas;
-  int array[500][500];
 
   cin >> vertices;
   cin >> arestas;
@@ -31,8 +72,8 @@ int main(){
 
     Grafo cidade;
 
-    for(int i = 0; i < 500; i++) {
-      for(int j = 0; j < 500; j++) {
+    for(int i = 0; i < 501; i++) {
+      for(int j = 0; j < 501; j++) {
         cidade.grafo[i][j] = -1;
       }
     };
@@ -53,8 +94,7 @@ int main(){
       cin >> X;
       cin >> Y;
 
-      array[j][j] = X;
-      array[j+1][j+1] = Y;
+      dijkstra(cidade.grafo, X, Y);
     }
 
     cin >> vertices;
