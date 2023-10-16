@@ -17,7 +17,7 @@ Neste repositório estão 3 questões sobre o conteúdo do módulo de Grafos 2. 
 ## Screenshots
 
 ![](./assets/exercicioDjikstra/aceito.png)
-
+![](./assets/exercicioGuerra/accepted.png)
 
 ## Instalação 
 **Linguagem**: C++<br>
