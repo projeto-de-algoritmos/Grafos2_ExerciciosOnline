@@ -1,7 +1,7 @@
-# Exercícios Online
+# Exercicios Online
 
 **Número da Lista**: X<br>
-**Conteúdo da Disciplina**: Grafos 2<br>
+**Conteúdo da Disciplina**: Grafo 2<br>
 
 ## Alunos
 |Matrícula | Aluno |
@@ -10,21 +10,26 @@
 | 18/0022512 |  Lucas de Lima Spinosa dos Santos |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+
+Neste repositório estão 3 questões sobre o conteúdo do módulo de Grafos 2. O código fonte das questões, juntamente com maiores detalhes a respeito das mesmas (como o enunciado, por exemplo), se encontram nas pastas.
+
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+![](./assets/exercicioDjikstra/aceito.png)
+
 
 ## Instalação 
 **Linguagem**: C++<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Para rodar o código fonte, use o compilador GCC, gerando um arquivo executável a partir do código fonte, conforme o exemplo fictício abaixo.
 
+    g++ arquivoExecutavel -o arquivoCodigoFonte.cpp
 
+    ./arquivoExecutavel.exe
 
+Caso queira carregar casos de teste presentes em um arquivo .txt, execute o arquivo de saída da compilação passando o .txt como entrada:
 
+    ./arquivoExecutavel.exe < testes.txt 
