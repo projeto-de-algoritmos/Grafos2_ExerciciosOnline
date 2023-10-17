@@ -57,7 +57,7 @@ Nao e possivel entregar a carta
 ![](../assets/exercicioGuerra/accepted.png)
 ## Explicação do codigo
 
-A explicação pode ser encontrada clicando [Aqui!]()  
+A explicação pode ser encontrada clicando [Aqui!](https://youtu.be/bUN6E2yo_j0)  
 O vídeo também pode ser encontrado na pasta "Assets" do repositório!
 
 
