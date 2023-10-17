@@ -54,7 +54,7 @@ Print a blank line between test cases.
 ![](../assets/exercicioHighways/accepted.png)
 ## Explicação do codigo
 
-A explicação pode ser encontrada clicando [Aqui!]()  
+A explicação pode ser encontrada clicando [Aqui!](https://www.youtube.com/watch?v=vm2-xxi_6vA)  
 O vídeo também pode ser encontrado na pasta "Assets" do repositório!
 
 
